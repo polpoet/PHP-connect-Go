@@ -43,7 +43,7 @@ class StrategyGoA implements ChoiceStrategy
         curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 20);
         curl_setopt($ch, CURLOPT_TIMEOUT, 20);
         curl_setopt($ch, CURLOPT_PROXY, null);
-        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false); // просто отключаем проверку сертификата
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false); 
         curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
         curl_setopt($ch, CURLOPT_POST, 1);
         curl_setopt($ch, CURLOPT_POSTFIELDS, $jsonData);
